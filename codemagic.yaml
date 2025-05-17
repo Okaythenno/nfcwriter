@@ -1,0 +1,29 @@
+workflows:
+  ios-build:
+    name: AmiiboWriter iOS Build
+    environment:
+      xcode: latest
+      vars:
+        XCODE_WORKSPACE: ""
+        XCODE_SCHEME: AmiiboWriter
+    scripts:
+      - name: Set up keychain
+        script: |
+          security create-keychain -p "" build.keychain
+          security default-keychain -s build.keychain
+          security unlock-keychain -p "" build.keychain
+          security set-keychain-settings
+      - name: Build .ipa
+        script: |
+          xcodebuild -project AmiiboWriter.xcodeproj \
+                     -scheme AmiiboWriter \
+                     -sdk iphoneos \
+                     -configuration Release \
+                     -archivePath $CM_BUILD_DIR/AmiiboWriter.xcarchive \
+                     archive
+          xcodebuild -exportArchive \
+                     -archivePath $CM_BUILD_DIR/AmiiboWriter.xcarchive \
+                     -exportOptionsPlist exportOptions.plist \
+                     -exportPath $CM_BUILD_DIR/export
+    artifacts:
+      - export/*.ipa
