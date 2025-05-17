@@ -4,7 +4,6 @@ workflows:
     environment:
       xcode: latest
       vars:
-        XCODE_WORKSPACE: ""
         XCODE_SCHEME: AmiiboWriter
     scripts:
       - name: Set up keychain
@@ -16,7 +15,7 @@ workflows:
       - name: Build .ipa
         script: |
           xcodebuild -project AmiiboWriter.xcodeproj \
-                     -scheme AmiiboWriter \
+                     -scheme $XCODE_SCHEME \
                      -sdk iphoneos \
                      -configuration Release \
                      -archivePath $CM_BUILD_DIR/AmiiboWriter.xcarchive \
