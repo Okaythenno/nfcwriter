@@ -1,0 +1,130 @@
+
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 55;
+  objects = {
+
+/* Begin PBXBuildFile section */
+    1D60589D0D05DD3D006BFB54 /* AmiiboWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60589E0D05DD3D006BFB54 /* AmiiboWriterApp.swift */; };
+    1D60589F0D05DD3D006BFB54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6058A00D05DD3D006BFB54 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+    1D60589E0D05DD3D006BFB54 /* AmiiboWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboWriterApp.swift; sourceTree = "<group>"; };
+    1D6058A00D05DD3D006BFB54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+    1D6058A10D05DD3D006BFB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+    1D6058A20D05DD3D006BFB54 = {
+      isa = PBXGroup;
+      children = (
+        1D60589E0D05DD3D006BFB54 /* AmiiboWriterApp.swift */,
+        1D6058A00D05DD3D006BFB54 /* ContentView.swift */,
+        1D6058A10D05DD3D006BFB54 /* Info.plist */,
+      );
+      sourceTree = "<group>";
+    };
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+    1D6058A30D05DD3D006BFB54 = {
+      isa = PBXProject;
+      attributes = {
+        LastUpgradeCheck = 1300;
+        ORGANIZATIONNAME = "Example";
+      };
+      buildConfigurationList = 1D6058A40D05DD3D006BFB54;
+      compatibilityVersion = "Xcode 13.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = (
+        en,
+      );
+      mainGroup = 1D6058A20D05DD3D006BFB54;
+      productRefGroup = 1D6058A20D05DD3D006BFB54;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (1D6058A50D05DD3D006BFB54);
+    };
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+    1D6058A60D05DD3D006BFB54 = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        1D60589D0D05DD3D006BFB54 /* AmiiboWriterApp.swift in Sources */,
+        1D60589F0D05DD3D006BFB54 /* ContentView.swift in Sources */,
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+    1D6058A50D05DD3D006BFB54 = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 1D6058A70D05DD3D006BFB54;
+      buildPhases = (
+        1D6058A60D05DD3D006BFB54,
+      );
+      buildRules = ();
+      dependencies = ();
+      name = "AmiiboWriter";
+      productName = "AmiiboWriter";
+      productReference = 1D6058A80D05DD3D006BFB54;
+      productType = "com.apple.product-type.application";
+    };
+/* End PBXNativeTarget section */
+
+/* Begin XCBuildConfiguration section */
+    1D6058A90D05DD3D006BFB54 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = AmiiboWriter;
+        INFOPLIST_FILE = AmiiboWriter/Info.plist;
+        SWIFT_VERSION = 5.0;
+        IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+        TARGETED_DEVICE_FAMILY = "1";
+      };
+      name = Debug;
+    };
+    1D6058AA0D05DD3D006BFB54 = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = AmiiboWriter;
+        INFOPLIST_FILE = AmiiboWriter/Info.plist;
+        SWIFT_VERSION = 5.0;
+        IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+        TARGETED_DEVICE_FAMILY = "1";
+      };
+      name = Release;
+    };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+    1D6058A40D05DD3D006BFB54 = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        1D6058A90D05DD3D006BFB54,
+        1D6058AA0D05DD3D006BFB54,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    1D6058A70D05DD3D006BFB54 = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        1D6058A90D05DD3D006BFB54,
+        1D6058AA0D05DD3D006BFB54,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+/* End XCConfigurationList section */
+
+  };
+  rootObject = 1D6058A30D05DD3D006BFB54;
+}
